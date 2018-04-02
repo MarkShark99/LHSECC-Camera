@@ -7,7 +7,7 @@ pygame.init()
 pygame.display.init()
 pygame.camera.init()
 
-size = (320, 240) # Resolution for PiTFT screen
+size = (320, 240)  # Resolution for PiTFT screen
 screen = pygame.display.set_mode(size, 0)
 cam_list = pygame.camera.list_cameras()
 font = pygame.font.Font(None, 20)
@@ -20,15 +20,15 @@ cam = pygame.camera.Camera(cam_list[0], size)
 cam.start()
 
 while True:
-    temperature = thermometer.read_temperature_f() #Get temperature in fahrenheit
+    temperature = round(thermometer.read_temperature_f(), 1)  # Get temperature in fahrenheit
     image = cam.get_image()
-    r = font.render("TEST", True, (255, 255, 255))
-    screen.blit(image, (0, 0))
-    screen.blit(r, (300, 220))
-    
+    temperature_text = font.render(str(temperature), True, (255, 255, 255))
+    screen.blit(image, (0, 0))  # Blit image from camera to screen
+    screen.blit(temperature_text, (300, 220))  # Blit temperature to screen
+
     pygame.display.update()
-    
-    for event in pygame.event.get():
+
+    for event in pygame.event.get():  # Get list of pygame events
         if event.type == pygame.QUIT:
             cam.stop()
             pygame.quit()
