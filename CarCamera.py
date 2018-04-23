@@ -38,9 +38,9 @@ while True:
     
     image = cam.get_image()
 
-    temperature_text = font.render(str(temperature), True, (255, 255, 255))
-    amperage_text = font.render(str(amps), True, (255, 255, 255))
-    voltage_text = font.render(str(volts), True, (255, 255, 255))
+    temperature_text = font.render("Temp  " + str(temperature), True, (255, 255, 255))
+    amperage_text = font.render("Amps: " + str(amps), True, (255, 255, 255))
+    voltage_text = font.render("Volt" + str(volts), True, (255, 255, 255))
 
     screen.blit(image, (0, 0))  # Blit image from camera to screen
     screen.blit(temperature_text, (3, 190))  # Blit temperature to screen
