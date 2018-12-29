@@ -1,9 +1,9 @@
 # LHSECC-Camera
 Stands for:\
-Lakeshore\
-High\
-School\
-Electric\
-Car\
-Club\
-Camera
+> Lakeshore\
+> High\
+> School\
+> Electric\
+> Car\
+> Club\
+> Camera
