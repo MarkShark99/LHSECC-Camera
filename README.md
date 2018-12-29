@@ -24,7 +24,7 @@ Using PyGame's camera module, the program is able to stream the camera feed dire
 ### Temperature monitoring
 Using an Adafruit BME280 temperature sensor, the program is able to monitor the temperature (in fahrenheit) of either the cabin or the motor and battery compartment of the car, and display it over the video feed.
 
-### Voltage and Amperage monitoring
+### Voltage and amperage monitoring
 Using an Adafruit MCP3008 Analog-to-Digital convertor and another unknown sensor, the program is able to monitor the voltage and amperage being drawn by the car's motor, and display these values over the video feed. 
 
 ## Unimplemented Features
