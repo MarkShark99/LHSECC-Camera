@@ -8,7 +8,7 @@ Stands for:
 > Club\
 > Camera
 
-This program was requested by Lakeshore High School's electric car racing team for use during races to display a video feed and monitor the temperature and the voltage and amperage draws of the car via an onboard Raspberry Pi.
+This program was created for Lakeshore High School's electric car racing team for use during races to display a video feed and monitor the temperature and the voltage and amperage draws of the car via an onboard Raspberry Pi.
 
 ## Components
 - Raspberry Pi Zero W - Main board
