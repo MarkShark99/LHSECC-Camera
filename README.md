@@ -32,6 +32,3 @@ This is a list of features that were considered or worked on but were ultimately
 
 ### Wireless track timer and video feed
 Using a Wi-Fi network and a custom antenna attached to the Raspberry Pi, the program would be able to stream its video feed over the network and have a track timer that was controlled by a spectator. While the antenna was built and attached to a Raspberry Pi, that Pi ended up being broken by a member of the team and was replaced by one without the antenna. There was also the issue of range of Wi-Fi while on the track.
-
-### Video storage
-The program was originally going to store the live video feed to disk, but this idea was scrapped as continuously writing to the Pi's SD card could be a point of failure.
